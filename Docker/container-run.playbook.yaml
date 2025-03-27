@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks: 
+  - name: Run nginx container
+    docker_container:
+     name: my-apps
+     image: nginx
+     state: started
+     ports:
+     - "8080:80"
