@@ -1,15 +1,15 @@
 ---
-- name: service module demo
+- name: Service module demo
   hosts: all
   become: true
   vars:
     services_on_boot:
       - "chronyd.service"
   tasks:
-    - name: populate service facts
+    - name: Populate service facts
       ansible.builtin.service_facts:
 
-    - name: sshd enable on boot
+    - name: SSHD enable on boot
       ansible.builtin.service:
         name: "{{ item }}"
         enabled: true

@@ -2,7 +2,7 @@
 - hosts: all
   tasks: 
   - name: Run nginx container
-    docker_container:
+    community.docker.docker_container:
      name: my-apps
      image: nginx
      state: stopped
