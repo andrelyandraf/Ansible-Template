@@ -1,7 +1,3 @@
 {
-<<<<<<< HEAD
-    "ansible.python.interpreterPath": "/usr/bin/python3"
-=======
-    "ansible.python.interpreterPath": "/usr/bin/python3"
->>>>>>> 139b88d59adb21777c52e5149056afe6d462ca4b
+    "ansible.python.interpreterPath": "/bin/python3"
 }
