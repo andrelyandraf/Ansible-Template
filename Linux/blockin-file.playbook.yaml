@@ -3,9 +3,19 @@
   hosts: all
   become: true
   tasks:
+<<<<<<< HEAD
    - name: Generate /etc/hosts file
      ansible.builtin.blockinfile:
       state: present
       dest: /etc/hosts
       content: |
         192.168.0.200 demo demo.example.com
+=======
+
+   - name: Generate /etc/hosts file
+     ansible.builtin.blockinfile:
+       state: present
+       dest: /etc/hosts
+       content: |
+         192.168.0.200 demo demo.example.com
+>>>>>>> 139b88d59adb21777c52e5149056afe6d462ca4b

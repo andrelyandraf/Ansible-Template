@@ -1,5 +1,5 @@
 ---
-- name: file module demo
+- name: File module demo
   hosts: all
   vars:
     mydir: "~/example"
@@ -11,3 +11,4 @@
         owner: devops
         group: users
         mode: '0644'
+

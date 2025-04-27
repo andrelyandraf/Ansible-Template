@@ -1,0 +1,11 @@
+---
+- name: Shell module
+  hosts: all
+  tasks:
+   - name: Shell command test ansible
+     ansible.builtin.shell:
+      - 'ls -l ~'
+     register: command_output
+   - name: Show Command output 
+     ansible.builtin.debug:
+      var: command_output.stdout_lines

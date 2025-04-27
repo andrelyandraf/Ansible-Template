@@ -4,13 +4,14 @@
   vars:
     path: "~/example/file.txt"
   tasks:
-   - name: Copy file from host to remote hosts
-     ansible.builtin.copy:
-      src: /pat/to/file
-      dest: /path/to/file
-      mode: "0644"
-   - name: Creating an empty File
-     ansible.builtin.file:
-        path: "{{ path }}"
-        state: touch
-        mode: "0644"
+    - name: Copy file from host to remote hosts
+      ansible.builtin.copy:
+       src: /pat/to/file
+       dest: /path/to/file
+       mode: "0644"
+    - name: Creating an empty File
+      ansible.builtin.file:
+       path: "{{ path }}"
+       state: touch 
+       mode: "0644"
+
