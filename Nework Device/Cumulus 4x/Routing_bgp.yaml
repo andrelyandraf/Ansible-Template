@@ -4,11 +4,11 @@
   become: true
   tasks:
     - name: Configure BGP
-      nclu:
+      community.network.nclu:
        command: net add bgp autonomous-system 65001
     - name: Configure bgp peer to leaf
-      nclu:
+      community.network.nclu:
        command: net add bgp neighboar swp1 remote-as external
     - name: Save and Commit
-      nclu:
+      community.network.nclu:
        command: net commit

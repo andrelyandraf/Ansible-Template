@@ -1,11 +1,10 @@
 ---
-- name: blockinfile module demo
+- name: Blockinfile module demo
   hosts: all
   become: true
   tasks:
-
-  - name: Generate /etc/hosts file
-    ansible.builtin.blockinfile:
+   - name: Generate /etc/hosts file
+     ansible.builtin.blockinfile:
       state: present
       dest: /etc/hosts
       content: |
